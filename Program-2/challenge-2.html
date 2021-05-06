@@ -1,1 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+       
 
+    tr,td{
+    border: solid black 2px;
+    width: 33%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color:rgb(209, 165, 245);
+    }
+    table{
+                border: solid black 3px;
+                text-align: center;
+                background-color: black;
+                margin: auto;
+                font-size: 25px;
+                box-shadow: 3px 5px black;
+                padding: 2px;
+                border-radius: 8px;
+                width: 50%;
+            }
+            
+            .blink{
+		width: 1500px;
+		height: 50px;
+	    background-color: white;
+		padding: 15px;	
+		text-align: center;
+		line-height: 100px;
+	}
+	span{
+		font-size: 35px;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		color: black;
+		animation: blink 1s linear infinite;
+        
+	}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+    </style>
+<script>
+document.write( "<table><tr><td colspan='3'><h2>NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES</h2></td></tr>" );
+document.write( "<tr><td><i>NUMBERS</i></td><td><i>SQUARES</i></td><td><i>CUBES</i></td></tr>" );
+for(var n=100; n<=1000; n+=100)
+{
+document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>"+ n*n*n + "</td></tr>" ) ;
+}
+document.write( "</table>" ) ;
+</script>
+</head>
+
+<body>
+    <div class="blink"><span><u>------------CHALLENGE ASSIGNMENT COMPLETED  (1JT18IS049 - Rachana A)--------------</u></span></div>
+</body>
+</html>
