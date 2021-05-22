@@ -1,1 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.img{
+  float:left;
+  }
+#text {
+  position: absolute;
+  float: right;
+  top: 30%;
+    right: 10%;
+  
+  transform: translate(-50%, -50%);
+}
+.checked {
+  color: orange;
+}
+hr{
+        height: 1.5px;
+        background-color: black;
+        border: none;
+    }
+</style>
+</head>
+<body style="background-color: thistle;">
 
+
+<article>
+<header>
+	<a href="/wombats">Home </a>  |   <a href="/wombats">Places </a>   |  <a href="/wombats">Gallary </a>   |  <a href="/wombats">About Us </a>  |  <a href="/wombats">Search</a>
+  <h1><b><i><u>FOREST  WALLPAPER  IDEAS!</u></i></b></h1>
+  <img src="forest.jpg" alt="forest" width="800" height="400">
+  <p>Posted by Rachana A <br> <strong> Reference of the picture: Google Images </strong></p>
+</header>
+</article>
+
+<p>Wallpaper is a material used in interior decoration to decorate the interior walls of domestic and public buildings. It is usually sold in rolls and is applied onto a wall using wallpaper paste. Wallpapers can come plain as "lining paper" so that it can be painted or used to help cover uneven surfaces and minor wall defects.<br> Thus giving a better surface, textured such as Anaglypta, with a regular repeating pattern design, or, much less commonly today, with a single non-repeating large design carried over a set of sheets. The smallest rectangle that can be tiled to form the whole pattern is known as the pattern repeat.</p>
+
+<section>
+  
+  <p>Year:2021 <br> Date: January 20</p>
+</section>
+
+
+  <p id="text"></p>
+  <div id="#text">
+<script>
+  var var1 = setInterval(inTimer, 500);
+  var fs = 5; //font size
+  var ids = document.getElementById("text");
+  function inTimer()
+  {
+    ids.innerHTML = 'NIGHT FOREST';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+    fs += 5;
+    if (fs >= 50)
+    {
+      clearInterval(var1); //paused
+      var2 = setInterval(deTimer, 500);
+    }
+  }
+  function deTimer() //fs = 50px
+  {
+    fs -= 5;
+    ids.innerHTML = 'DARK FOREST';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+    if (fs == 5)
+    {
+      clearInterval(var2); //paused
+      var1 = setInterval(inTimer, 500);
+    }
+  }
+</script>
+</div>
+
+<p><h3>Reviews</h3></p>
+<p><strong>Looks like a Painting!!</strong> <br> Levy  
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> <br>
+<small>would definitely check out websites for a forest wallpaper!</small></p>
+<hr>
+
+<p><strong>Amazing!</strong> <br> Lisa  
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> <br>
+<small>share the link of this website!!</small></p>
+<hr>
+
+<p><strong>Nice Wallpaper idea!</strong> <br> Rose
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  <br>
+<small>wow amazing picture!</small></p>
+<hr>
+
+<p><strong>Wallpaper aesthetic!!</strong> <br> Jennie  
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>  <br>
+<small>Thanks for posting this and letting us know</small></p>
+<hr>
+
+<footer>
+  <a href="/wombats">Home</a>  |  
+  <a href="/wombats">Places</a>  |  
+  <a href="/wombats">Gallary</a>  |  
+  <a href="/wombats">About Us</a><br>Copyright&copy;Challenge3RachanaA
+</footer>
+
+</body>
+</html>
